@@ -3,7 +3,7 @@ import React from 'react'
 function Skill() {
     return (
         <>
-            <div data-aos="fade-up" data-aos-delay="100" className=' container mx-auto px-16   grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 py-32  ' >
+            <div data-aos="fade-up" data-aos-delay="100" className=' container mx-auto px-12   grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 py-32  ' >
                 <div className=' '>
                     <div className=' flex items-center gap-4'>
                         <p className='text-white text-3xl font-bold'>Design Skill</p>
