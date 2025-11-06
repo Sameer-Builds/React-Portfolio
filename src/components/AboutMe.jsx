@@ -73,9 +73,9 @@ function AboutMe() {
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="800" className='container px-6 mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10'>
+                <div data-aos="fade-up" data-aos-delay="800" className='   mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10'>
                     <div className=''>
-                        <div className='border border-red-500/20 rounded-3xl p-15  text-center group transition-all duration-500 hover:border-red-500/60'>
+                        <div className='border border-red-500/20 rounded-3xl p-15 text-center  group transition-all duration-500 hover:border-red-500/60'>
 
 
                             <p className=' text-white text-5xl text-center whitespace-nowrap font-bold mb-3  group-hover:text-red-500'>
