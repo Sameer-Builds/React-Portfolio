@@ -3,7 +3,7 @@ import React from 'react'
 function LatestService() {
     return (
         <>
-            <div className='container px-16 mx-auto'>
+            <div className=' mx-auto'>
                 <div data-aos="fade-right" data-aos-delay="200" className='text-center mx-6 py-16 '>
                     <p className='text-red-500 text-2xl font-semibold '>Latest Service</p>
                     <p className='text-white text-4xl font-semibold  mt-3 leading-normal'>Inspiring The World One Project</p>
