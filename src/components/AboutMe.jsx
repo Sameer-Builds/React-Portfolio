@@ -52,7 +52,7 @@ function AboutMe() {
                 </div>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="500" className='container lg:space-x-6 lg:ml-5 px-16 lg:flex mx-auto '>
+            <div data-aos="fade-up" data-aos-delay="500" className='container lg:space-x-6 lg:ml-5 px-16 lg:flex mx-auto sm:space-y-5'>
                 <div className="p-2 lg:px-5 bg-linear-to-br from-black to-red-900/80 rounded-3xl md:pb-15 grid items-center">
                     <div className="flex flex-col lg:flex-row items-start justify-start">
                         <div className="flex flex-row lg:flex-col items-start justify-start">
@@ -73,7 +73,7 @@ function AboutMe() {
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="800" className='   mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10'>
+                <div data-aos="fade-up" data-aos-delay="800" className=' lg:container md:container md:px-6 lg:px-6 mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10'>
                     <div className=''>
                         <div className='border border-red-500/20 rounded-3xl p-15 text-center  group transition-all duration-500 hover:border-red-500/60'>
 
