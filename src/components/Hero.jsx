@@ -20,9 +20,9 @@ function Hero() {
                     <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-red-500">
                         <ReactTyped
                             strings={[
-                                "A Web Developer",
-                                "A Creative Thinker",
-                                "A Coder"
+                                "Developer",
+                                "Thinker",
+                                "Coder"
                             ]}
                             typeSpeed={70}
                             backSpeed={40}
