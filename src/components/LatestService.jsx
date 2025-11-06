@@ -7,7 +7,7 @@ function LatestService() {
                 <div data-aos="fade-right" data-aos-delay="200" className='text-center mx-6 py-16 '>
                     <p className='text-red-500 text-2xl font-semibold '>Latest Service</p>
                     <p className='text-white text-4xl font-semibold  mt-3 leading-normal'>Inspiring The World One Project</p>
-                    <p className='text-gray-400/70  mt-3 w-60 md:w-96 lg:w-96 m-auto'>Business consulting consultants provide expert advice and guida businesses to help them improve their performance, efficiency, and organizational</p>
+                    <p className='text-gray-400/70  mt-3  md:w-96 lg:w-96 m-auto'>Business consulting consultants provide expert advice and guida businesses to help them improve their performance, efficiency, and organizational</p>
                 </div>
                 <div className='mx-8  gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 '>
                     <div className='flex flex-col mt-5 '>
