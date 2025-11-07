@@ -8,6 +8,7 @@ import {
     FaFacebook,
     FaBars,
     FaTimes,
+    FaWhatsapp,
 } from "react-icons/fa";
 
 function Navbar() {
@@ -98,22 +99,22 @@ function Navbar() {
                                 <FaInstagram />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/sameer-akhtar-601349381/"
                                 className="bg-gray-400 p-2 rounded-full hover:bg-red-600 transition-all"
                             >
                                 <FaLinkedinIn />
                             </a>
                             <a
-                                href="#"
+                                href="https://github.com/Sameer-Builds"
                                 className="bg-gray-400 p-2 rounded-full hover:bg-red-600 transition-all"
                             >
                                 <FaGithub />
                             </a>
                             <a
-                                href="#"
+                                href="https://wa.me/923216903462"
                                 className="bg-gray-400 p-2 rounded-full hover:bg-red-600 transition-all"
                             >
-                                <FaFacebook />
+                                <FaWhatsapp />
                             </a>
                         </div>
                     </div>

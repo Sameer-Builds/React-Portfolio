@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaInstagram, FaLinkedinIn, FaTwitter, FaFacebookF } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn, FaTwitter, FaFacebookF, FaWhatsapp, FaGithub } from 'react-icons/fa';
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
 
 function Footer() {
@@ -112,7 +112,7 @@ function Footer() {
                                 <FaInstagram className="relative text-gray-400 text-lg transition-colors duration-300 group-hover:text-white" />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/sameer-akhtar-601349381/"
                                 className="relative w-10 h-10 flex items-center justify-center overflow-hidden rounded-full bg-zinc-800 transition-colors group"
                             >
                                 <span
@@ -121,22 +121,22 @@ function Footer() {
                                 <FaLinkedinIn className="relative text-gray-400 text-lg transition-colors duration-300 group-hover:text-white" />
                             </a>
                             <a
-                                href="#"
+                                href="https://github.com/Sameer-Builds"
                                 className="relative w-10 h-10 flex items-center justify-center overflow-hidden rounded-full bg-zinc-800 transition-colors group"
                             >
                                 <span
                                     className="absolute inset-0 rounded-full bg-red-500 scale-0 transition-transform duration-500 ease-out origin-center group-hover:scale-100"
                                 ></span>
-                                <FaTwitter className="relative text-gray-400 text-lg transition-colors duration-300 group-hover:text-white" />
+                                <FaGithub className="relative text-gray-400 text-lg transition-colors duration-300 group-hover:text-white" />
                             </a>
                             <a
-                                href="#"
+                                href="https://wa.me/923216903462"
                                 className="relative w-10 h-10 flex items-center justify-center overflow-hidden rounded-full bg-zinc-800 transition-colors group"
                             >
                                 <span
                                     className="absolute inset-0 rounded-full bg-red-500 scale-0 transition-transform duration-500 ease-out origin-center group-hover:scale-100"
                                 ></span>
-                                <FaFacebookF className="relative text-gray-400 text-lg transition-colors duration-300 group-hover:text-white" />
+                                <FaWhatsapp className="relative text-gray-400 text-lg transition-colors duration-300 group-hover:text-white" />
                             </a>
                         </div>
                     </div>

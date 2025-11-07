@@ -4,11 +4,11 @@ import Form from './Form'
 function Services() {
     return (
         <>
-            <div className='p-36'>
+            <div className='p-20 md:p-36 lg:p-36'>
                 <p className=' text-center text-5xl font-semibold hover:text-red-500'>My Service</p>
                 <p className='mt-6 text-center  '>Home  <span> {" > "}  Service</span></p>
             </div>
-            <div className='container p-10 mx-auto  gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 '>
+            <div className='container p-2 mx-auto  gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 '>
                 <div className='flex flex-col mt-5 '>
                     <div>
                         <div className='border border-red-500/20 rounded-3xl p-8 bg-zinc-900/70  group transition-all duration-500 hover:border-red-500/60'>
