@@ -15,6 +15,7 @@ import Contact from './components/Contact';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { SiteDataProvider } from "./context/SiteDataContext";
 
 function App() {
 
@@ -30,20 +31,22 @@ function App() {
 
   return (
     <div className="bg-black text-white min-h-screen overflow-x-hidden">
-      <Navbar />
+      <SiteDataProvider>
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/skills" element={<DesignandSkill />} />
-        <Route path="/latestService" element={<LatestService />} />
-        <Route path="/education" element={<EduandExp />} />
-        <Route path="/contactus" element={<Form />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/skills" element={<DesignandSkill />} />
+          <Route path="/latestService" element={<LatestService />} />
+          <Route path="/education" element={<EduandExp />} />
+          <Route path="/contactus" element={<Form />} />
+        </Routes>
 
-      <Footer />
+        <Footer />
+      </SiteDataProvider>
     </div>
   );
 }

@@ -1,0 +1,335 @@
+{
+    "navbar": {
+        "logo": "white-logo-reeni.png",
+        "links": {
+            "first" :{
+                "name": "Home",
+                "path": "/"
+            },
+            "second" :{
+                "name": "About",
+                "path": "/about"
+            },
+            "third":{
+                "name": "Services",
+                "path": "/Services"
+            },
+            "fourth":{
+                "name": "Project",
+                "path": "/me"
+            },
+            "fifth":{
+                "name": "Contact",
+                "path": "/Contact"
+            }
+        }
+    },
+    "hero": {
+        "greeting": "Hello",
+        "name": "Sameer Akhtar",
+        "roles": [
+            "A Developer",
+            "A Thinker",
+            "A Coder"
+        ],
+        "description": "A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities and professional growth.",
+        "buttonText": "View Portfolio",
+        "image": "/banner-user-image-one.png",
+        "backgroundImage": "/banner-background-one.jpg"
+    },
+    "aboutme": {
+        "skillCards": [
+            {
+                "title": "Web Design",
+                "project": "120"
+            },
+            {
+                "title": "UI/UX Design",
+                "project": "120"
+            },
+            {
+                "title": "Web Research",
+                "project": "120"
+            },
+            {
+                "title": "Marketing",
+                "project": "120"
+            }
+        ],
+        "experience": {
+            "years": {
+                "first": "2",
+                "second": "5"
+            },
+            "title": {
+                "first": "Years Of",
+                "second": "Experience"
+            },
+            "description": "Business consulting consultants provide expert advice and businesses to help them enhance their performance and efficiency."
+        },
+        "stats": [
+            {
+                "value": "20K+",
+                "label": "Project Complet"
+            },
+            {
+                "value": "10K+",
+                "label": "Natural Products"
+            },
+            {
+                "value": "200+",
+                "label": "Client Reviews"
+            },
+            {
+                "value": "1000+",
+                "label": "Satisfied Clients"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "category": "Design Skill",
+            "image":"custom-line.png",
+            "items": [
+                {
+                    "name": "PHOTOSHOP",
+                    "percentage": "100%"
+                },
+                {
+                    "name": "FIGMA",
+                    "percentage": "95%"
+                },
+                {
+                    "name": "ADOBE XD",
+                    "percentage": "60%"
+                },
+                {
+                    "name": "ADOBE ILLUSTRATOR",
+                    "percentage": "70%"
+                }
+            ]
+        },
+        {
+            "category": "Development Skill",
+            "image":"custom-line.png",
+            "items": [
+                {
+                    "name": "HTML",
+                    "percentage": "100%"
+                },
+                {
+                    "name": "CSS",
+                    "percentage": "95%"
+                },
+                {
+                    "name": "JAVASCRIPT",
+                    "percentage": "60%"
+                },
+                {
+                    "name": "TAILWIND CSS",
+                    "percentage": "70%"
+                }
+            ]
+        }
+    ],
+    "latestService": {
+        "sectionTitle": "Latest Service",
+        "sectionSubtitle": "Inspiring The World One Project",
+        "sectionDescription": "Business consulting consultants provide expert advice and guida businesses to help them improve their performance, efficiency, and organizational",
+        "services": [
+            {
+                "id": 1,
+                "title": "A Portfolio of Creativity",
+                "description": "Business consulting consultants provide expert advice and guida the a businesses to help theme their performance efficiency"
+            },
+            {
+                "id": 2,
+                "title": "My Portfolio of Innovation",
+                "description": "My work is driven by the belief that thoughtful design and strategic planning can empower brands, transform businesses"
+            },
+            {
+                "id": 3,
+                "title": "A Showcase of My Projects ",
+                "description": "In this portfolio, you’ll find a curated selection of projects that highlight my skills in Main Areas, e.g., responsive web design"
+            }
+        ],
+        "image": "latest-services-user-image.png"
+    },
+    "eduAndExp": {
+        "sectionTitle": "Education and Experience",
+        "sectionSubtitle": "Empowering Creativity through",
+        "sectionDescription": "Business consulting consultants provide expert advice and guida businesses to help them improve their performance, efficiency, and organizational",
+        "name": [
+            {
+                "first": "Education",
+                "second": "Experiences"
+            }
+        ],
+        "lineImage": "custom-line.png",
+        "education": [
+            {
+                "title": "Trainer Marketing",
+                "year": "2005-2009",
+                "description": "A personal portfolio is a curated collection of an individual's professional work, showcasing their skills, experience A personal portfolio"
+            },
+            {
+                "title": "Design Assistant",
+                "year": "2008-2012",
+                "description": "Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs."
+            },
+            {
+                "title": "Design Assistant",
+                "year": "2008-2012",
+                "description": "Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs."
+            },
+            {
+                "title": "Assistant Director",
+                "year": "2010-2014",
+                "description": "In this portfolio, you’ll find a curated selection of projects that highlight my skills in Main Areas, e.g., responsive web design"
+            }
+        ],
+        "experience": [
+            {
+                "tag": "experience",
+                "company": "Soft Tech",
+                "duration": "(2 Years)",
+                "role": "UI/UX Designer",
+                "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum desi dolore eu fugiat nulla pariatu Duis aute irure."
+            },
+            {
+                "tag": "experience",
+                "company": "Modern Tech",
+                "duration": "(3 Years)",
+                "role": "Web Developer",
+                "description": "In this portfolio, you’ll find a curated selection of projects that highlight my skills in Main Areas, e.g., responsive web design."
+            }
+        ],
+        "image": "expert-img.jpg"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "heading": "Elevate your brand with Me ",
+        "description": "We’d love to hear from you! Whether you have a question about our services, pricing, or anything else, feel free to reach out.",
+        "buttonText": "Send Message"
+    },
+    "footer": {
+        "logo": "white-logo-reeni.png",
+        "headline": "Get Ready To Create Great",
+        "newsletterPlaceholder": "Email Address",
+        "quickLinks": [
+            {
+                "first": "About Me",
+                "href": "#"
+            },
+            {
+                "second": "Service",
+                "href": "#"
+            },
+            {
+                "third": "Contact Me",
+                "href": "#"
+            },
+            {
+                "fourth": "Blog Post",
+                "href": "#"
+            },
+            {
+                "fifth": "Pricing",
+                "href": "#"
+            }
+        ],
+        "contact": {
+            "email": "example@gmail.com",
+            "address": "3891 Ranchview Dr. Richardson",
+            "phone": "01245789321"
+        },
+        "socialLinks": [
+            {
+                "icon": "FaInstagram",
+                "href": "#"
+            },
+            {
+                "icon": "FaLinkedinIn",
+                "href": "https://www.linkedin.com/in/sameer-akhtar-601349381/"
+            },
+            {
+                "icon": "FaGithub",
+                "href": "https://github.com/Sameer-Builds"
+            },
+            {
+                "icon": "FaWhatsapp",
+                "href": "https://wa.me/923216903462"
+            }
+        ],
+        "bottomLinks": [
+            {
+                "text": "Terms & Condition",
+                "href": "#"
+            },
+            {
+                "text": "Privacy Policy",
+                "href": "#"
+            },
+            {
+                "text": "Contact Us",
+                "href": "#"
+            }
+        ],
+        "copyright": "© InverseWeb 2025 | All Rights Reserved"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Home > About Me"
+    },
+    "myService": {
+        "title": "My Service",
+        "description": "Home > Service",
+        "cards": [
+            {
+                "title": "Success Architects",
+                "description": "Business consulting consultants provide expert advice and guida the a businesses to help theme their performance efficiency"
+            },
+            {
+                "title": "Success Architects",
+                "description": "My work is driven by the belief that thoughtful design and strategic planning can empower brands, transform businesses"
+            },
+            {
+                "title": "Success Architects",
+                "description": "In this portfolio, you’ll find a curated selection of projects that highlight my skills in Main Areas, e.g., responsive web design"
+            },
+            {
+                "title": "Visual Design",
+                "description": "Business consulting consultants provide expert advice and guida the a businesses to help theme their performance efficiency"
+            },
+            {
+                "title": "Branding Design",
+                "description": "My work is driven by the belief that thoughtful design and strategic planning can empower brands, transform businesses"
+            },
+            {
+                "title": "Motion Design",
+                "description": "In this portfolio, you’ll find a curated selection of projects that highlight my skills in Main Areas, e.g., responsive web design"
+            }
+        ]
+    },
+    "contactUs": {
+        "title": "Contact",
+        "description": "Home > Contact",
+        "cards": [
+            {
+                "icon": "FaLocationArrow",
+                "caption": "Location",
+                "address": "Dhaka 1216, road 45 house of street"
+            },
+            {
+                "icon": "FiMail",
+                "caption": "Email",
+                "email": "themespark11@gmail.com hasan@yourmail.com"
+            },
+            {
+                "icon": "FiPhone",
+                "caption": "Call Me",
+                "number": "0000 - 000 - 000 00 +1234 - 000"
+            }
+        ]
+    }
+}
