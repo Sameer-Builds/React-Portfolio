@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useSiteData } from "../context/SiteDataContext";
 function Form() {
+    const { contact } = useSiteData();
     return (
         <>
 
@@ -11,29 +12,28 @@ function Form() {
 
                         <div class="lg:w-1/2 space-y-4">
                             <p class="text-red-500 uppercase tracking-wide font-semibold">
-                                Contact Us
+                                {contact.title}
                             </p>
                             <h2 class="text-4xl sm:text-5xl font-bold leading-tight">
-                                Elevate your brand with Me
+                                {contact.heading}
                             </h2>
                             <p class="text-gray-400 max-w-md">
-                                We’d love to hear from you! Whether you have a question about our services,
-                                pricing, or anything else, feel free to reach out.
+                               {contact.description}
                             </p>
                         </div>
                         <form class=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
                             <input
-                                type="text"
+                                type="text" required
                                 placeholder="Your Name"
                                 class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500"
                             />
                             <input
-                                type="text"
+                                type="text" required
                                 placeholder="Phone Number"
                                 class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500"
                             />
                             <input
-                                type="email"
+                                type="email" required
                                 placeholder="Email Address"
                                 class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500"
                             />
@@ -51,7 +51,7 @@ function Form() {
                                 type="submit"
                                 class="bg-red-500 hover:bg-red 500 text-white font-semibold py-4 rounded-full col-span-2 mt-2 transition-all duration-300"
                             >
-                                Send Message
+                                {contact.buttonText}
                             </button>
                         </form>
                     </div>

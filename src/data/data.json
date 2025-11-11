@@ -215,7 +215,7 @@
     "footer": {
         "logo": "white-logo-reeni.png",
         "headline": "Get Ready To Create Great",
-        "newsletterPlaceholder": "Email Address",
+        "quick":"Quick Link",
         "quickLinks": [
             {
                 "first": "About Me",
@@ -238,6 +238,7 @@
                 "href": "#"
             }
         ],
+        "contacts":"Contacts",
         "contact": {
             "email": "example@gmail.com",
             "address": "3891 Ranchview Dr. Richardson",
