@@ -1,28 +1,28 @@
 {
     "navbar": {
         "logo": "white-logo-reeni.png",
-        "links": {
-            "first" :{
+        "links": [
+            {
                 "name": "Home",
                 "path": "/"
             },
-            "second" :{
+            {
                 "name": "About",
                 "path": "/about"
             },
-            "third":{
+            {
                 "name": "Services",
                 "path": "/Services"
             },
-            "fourth":{
+            {
                 "name": "Project",
                 "path": "/me"
             },
-            "fifth":{
+            {
                 "name": "Contact",
                 "path": "/Contact"
             }
-        }
+        ]
     },
     "hero": {
         "greeting": "Hello",
@@ -89,7 +89,7 @@
     "skills": [
         {
             "category": "Design Skill",
-            "image":"custom-line.png",
+            "image": "custom-line.png",
             "items": [
                 {
                     "name": "PHOTOSHOP",
@@ -111,7 +111,7 @@
         },
         {
             "category": "Development Skill",
-            "image":"custom-line.png",
+            "image": "custom-line.png",
             "items": [
                 {
                     "name": "HTML",
@@ -215,7 +215,7 @@
     "footer": {
         "logo": "white-logo-reeni.png",
         "headline": "Get Ready To Create Great",
-        "quick":"Quick Link",
+        "quick": "Quick Link",
         "quickLinks": [
             {
                 "first": "About Me",
@@ -238,7 +238,7 @@
                 "href": "#"
             }
         ],
-        "contacts":"Contacts",
+        "contacts": "Contacts",
         "contact": {
             "email": "example@gmail.com",
             "address": "3891 Ranchview Dr. Richardson",

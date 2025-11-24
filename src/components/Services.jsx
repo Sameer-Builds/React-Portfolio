@@ -6,7 +6,7 @@ function Services() {
     const { myService } = useSiteData();
     return (
         <>
-            <div className='p-20 md:p-36 lg:p-36'>
+            <div className=' p-20 md:p-36 lg:p-36'>
                 <p className=' text-center text-5xl font-semibold hover:text-red-500'>{myService.title}</p>
                 <p className='mt-6 text-center  '>{myService.description}</p>
             </div>

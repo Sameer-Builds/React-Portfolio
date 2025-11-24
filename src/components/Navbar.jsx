@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import {useSiteData} from "../context/SiteDataContext";
+import { useSiteData } from "../context/SiteDataContext";
 import {
     FaInstagram,
     FaLinkedinIn,
@@ -22,7 +22,7 @@ function Navbar() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-    const {navbar} = useSiteData();
+    const { navbar } = useSiteData();
     return (
         <>
             <nav
@@ -58,34 +58,16 @@ function Navbar() {
                     >
                         <ul>
                             <li className="flex flex-col md:flex-row md:items-center md:space-x-5 space-y-4 md:space-y-0 py-4 md:py-0 text-center md:text-left text-sm">
-                                <Link to="/" className="border-2 border-gray-500/0 hover:border-red-500 hover:text-red-500 transition-all font-bold rounded p-1">
-                                    {navbar.links.first.name}
-                                </Link>
-                                <Link
-                                    to="/about"
-                                    className="border-2 border-gray-500/0 hover:border-red-500 hover:text-red-500 transition-all font-bold rounded p-1"
-                                >
-                                    {navbar.links.second.name}
-                                </Link>
-                                <Link
-                                    to="/Services"
-                                    className="border-2 border-gray-500/0 hover:border-red-500 hover:text-red-500 transition-all font-bold rounded p-1"
-                                >
-                                    {navbar.links.third.name}
-                                </Link>
-                                <Link
-                                    to="/me"
-                                    className="border-2 border-gray-500/0 hover:border-red-500 hover:text-red-500 transition-all font-bold rounded p-1"
-                                >
-                                    {navbar.links.fourth.name}
-                                </Link>
+                                {navbar.links.map((link, index) => (
+                                    <Link
+                                        key={index}
+                                        to={link.path}
+                                        className="border-2 border-gray-500/0 hover:border-red-500 hover:text-red-500 transition-all font-bold rounded p-1"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                ))}
 
-                                <Link
-                                    to="/Contact"
-                                    className="border-2 border-gray-500/0 hover:border-red-500 hover:text-red-500 transition-all font-bold rounded p-1"
-                                >
-                                    {navbar.links.fifth.name}
-                                </Link>
                             </li>
                         </ul>
                         <div

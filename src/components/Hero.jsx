@@ -22,8 +22,8 @@ function Hero() {
                     <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-red-500">
                         <ReactTyped
                             strings={hero.roles ||[]}
-                            typeSpeed={70}
-                            backSpeed={40}
+                            typeSpeed={90}
+                            backSpeed={60}
                             backDelay={1500}
                             loop
                         ></ReactTyped>
