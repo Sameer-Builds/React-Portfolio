@@ -1,129 +1,68 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { useSiteData } from "../context/SiteDataContext";
-
 
 function Skill() {
     const { skills } = useSiteData();
+
+    useEffect(() => {
+        const bars = document.querySelectorAll(".progress-bar");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target;
+                        const finalWidth = bar.getAttribute("data-width");
+                        bar.style.width = finalWidth;     
+                        observer.unobserve(bar);          
+                    }
+                });
+            },
+            { threshold: 0.4 } 
+        );
+
+        bars.forEach((bar) => observer.observe(bar));
+
+        return () => {
+            bars.forEach((bar) => observer.unobserve(bar));
+        };
+    }, []);
+
     return (
-        <>
-            <div data-aos="fade-up" data-aos-delay="100" className=' container mx-auto px-12   grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 py-32  ' >
-                <div className=' '>
-                    <div className=' flex items-center gap-4'>
-                        <p className='text-white text-3xl font-bold'>{skills[0].category}</p>
-                        <img className='h-1/2 ' src={skills[0].image} alt="" />
-                    </div>
-                    <div className='mt-10 flex justify-between'>
-                        <div>
-                            <p className='text-white'>{skills[0].items[0].name} </p>
-                        </div>
-                        <div>
-                            <p className='text-white'>{skills[0].items[0].percentage}</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='mt-3 h-2 w-full bg-red-500 rounded-full'>
-                        </div>
-                    </div>
-                    <div className='mt-10 flex justify-between'>
-                        <div>
-                            <p className='text-white'>{skills[0].items[1].name}</p>
-                        </div>
-                        <div>
-                            <p className='text-white'>{skills[0].items[1].percentage}</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="mt-3 h-2 w-full bg-zinc-800 rounded-full overflow-hidden ">
-                            <div className="bg-red-500 rounded-full h-full w-[95%]"></div>
-                        </div>
-                    </div>
-                    <div className='mt-10 flex justify-between'>
-                        <div>
-                            <p className='text-white'>{skills[0].items[2].name}</p>
-                        </div>
-                        <div>
-                            <p className='text-white'>{skills[0].items[2].percentage}</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="mt-3 h-2 w-full bg-zinc-800 rounded-full overflow-hidden">
-                            <div className='bg-red-500 rounded-full h-full w-[60%]'></div>
-                        </div>
-                    </div>
-                    <div className='mt-10 flex justify-between'>
-                        <div>
-                            <p className='text-white'> {skills[0].items[3].name} </p>
-                        </div>
-                        <div>
-                            <p className='text-white'>{skills[0].items[3].percentage}</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='mt-3  h-2 w-full bg-zinc-800 rounded-full overflow-hidden'>
-                            <div className='bg-red-500 rounded-full h-full w-[75%]'></div>
-                        </div>
-                    </div>
-                </div>
-                <div className=''>
+        <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className='container mx-auto px-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 py-32'
+        >
+            {skills.map((skill, index) => (
+                <div key={index}>
                     <div className='flex items-center gap-4'>
-                        <p className='text-white text-3xl font-bold'>{skills[1].category}</p>
-                        <img className='h-1/2  ' src={skills[1].image} alt="" />
+                        <p className='text-white text-3xl font-bold'>{skill.category}</p>
+                        <img className='h-1/2' src={skill.image} alt={skill.category} />
                     </div>
-                    <div className='mt-10 flex justify-between'>
-                        <div>
-                            <p className='text-white'>{skills[1].items[0].name}</p>
+
+                    {skill.items.map((item, itemIndex) => (
+                        <div key={itemIndex} className='mt-10'>
+                            <div className='flex justify-between'>
+                                <p className='text-white'>{item.name}</p>
+                                <p className='text-white'>{item.percentage}</p>
+                            </div>
+                            <div className="w-full bg-zinc-900 rounded-full h-2 mt-3 overflow-hidden">
+                                <div
+                                    className="progress-bar bg-red-500 h-2 rounded-full"
+                                    data-width={item.percentage}
+                                    style={{
+                                        width: "0%",
+                                        transition: "width 1.5s ease"
+                                    }}
+                                ></div>
+                            </div>
                         </div>
-                        <div>
-                            <p className='text-white'>{skills[1].items[0].percentage}</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='mt-3 h-2 w-full bg-red-500 rounded-full'>
-                        </div>
-                    </div>
-                    <div className='mt-10 flex justify-between'>
-                        <div>
-                            <p className='text-white'>{skills[1].items[1].name}</p>
-                        </div>
-                        <div>
-                            <p className='text-white'>{skills[1].items[1].percentage}</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="mt-3 h-2 w-full bg-zinc-800 rounded-full overflow-hidden ">
-                            <div className="bg-red-500 rounded-full h-full w-[95%]"></div>
-                        </div>
-                    </div>
-                    <div className='mt-10 flex justify-between'>
-                        <div>
-                            <p className='text-white'>{skills[1].items[2].name}</p>
-                        </div>
-                        <div>
-                            <p className='text-white'>{skills[1].items[2].percentage}</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="mt-3 h-2 w-full bg-zinc-800 rounded-full overflow-hidden">
-                            <div className='bg-red-500 rounded-full h-full w-[62%]'></div>
-                        </div>
-                    </div>
-                    <div className='mt-10 flex justify-between'>
-                        <div>
-                            <p className='text-white'>{skills[1].items[3].name}</p>
-                        </div>
-                        <div>
-                            <p className='text-white'>{skills[1].items[3].percentage}</p>
-                        </div>
-                    </div>
-                    <div className=''>
-                        <div className='mt-3  h-2 w-full bg-zinc-800 rounded-full overflow-hidden'>
-                            <div className='bg-red-500 rounded-full h-full w-[75%]'></div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
-            </div>
-        </>
-    )
+            ))}
+        </div>
+    );
 }
 
-export default Skill
+export default Skill;
