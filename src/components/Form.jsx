@@ -18,35 +18,31 @@ function Form() {
                                 {contact.heading}
                             </h2>
                             <p class="text-gray-400 max-w-md">
-                               {contact.description}
+                                {contact.description}
                             </p>
                         </div>
                         <form class=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
-                            <input
-                                type="text" required
-                                placeholder="Your Name"
-                                class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500"
-                            />
-                            <input
-                                type="text" required
-                                placeholder="Phone Number"
-                                class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500"
-                            />
-                            <input
-                                type="email" required
-                                placeholder="Email Address"
-                                class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500"
-                            />
-                            <input
-                                type="text"
-                                placeholder="Subject"
-                                class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500"
-                            />
+                            {contact.fields.map((field, index) => {
+                                if (field.type === "textarea") {
+                                    return (
                             <textarea
-                                placeholder="Your Message"
-                                class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500 col-span-2 h-40 resize-none"
-                            ></textarea>
-
+                            key={index}
+                            required = {field.required}
+                            placeholder={field.placeholder}
+                            class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500 col-span-2"
+                            />
+                                    );
+                                }
+                                return (
+                            <input
+                            key={index}
+                            type={field.type}
+                            required= {field.required}
+                            placeholder={field.placeholder}
+                            class="bg-zinc-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-300 focus:outline-none focus:border-red-500"
+                            />
+                                );
+                            })}
                             <button
                                 type="submit"
                                 class="bg-red-500 hover:bg-red 500 text-white font-semibold py-4 rounded-full col-span-2 mt-2 transition-all duration-300"
