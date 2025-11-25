@@ -245,24 +245,24 @@
         "quick": "Quick Link",
         "quickLinks": [
             {
-                "first": "About Me",
-                "href": "#"
+                "label": "About Me",
+                "url": "/"
             },
             {
-                "second": "Service",
-                "href": "#"
+                "label": "Service",
+                "url": "/Service"
             },
             {
-                "third": "Contact Me",
-                "href": "#"
+                "label": "Contact Me",
+                "url": "/Contact"
             },
             {
-                "fourth": "Blog Post",
-                "href": "#"
+                "label": "Blog Post",
+                "url": "/Blog Post"
             },
             {
-                "fifth": "Pricing",
-                "href": "#"
+                "label": "Pricing",
+                "url": "/Pricing"
             }
         ],
         "contacts": "Contacts",
