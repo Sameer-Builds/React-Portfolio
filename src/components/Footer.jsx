@@ -19,7 +19,7 @@ function Footer() {
             <div className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
 
                 {/* Logo & Headline */}
-                <div data-aos="fade-up" data-aos-delay="400">
+                <div data-aos="fade-up" data-aos-delay="200">
                     <div className="flex items-center mb-4">
                         <img src={footer.logo} alt="logo" className="object-contain" />
                     </div>
@@ -39,7 +39,7 @@ function Footer() {
                 </div>
 
                 {/* Quick Links */}
-                <div data-aos="fade-up" data-aos-delay="400">
+                <div data-aos="fade-up" data-aos-delay="200">
                     <h3 className="text-white text-xl font-bold mb-6">{footer.quick}</h3>
                     <ul className="space-y-3">
                         {footer.quickLinks.map((link, index) => (
@@ -58,7 +58,7 @@ function Footer() {
                 </div>
 
                 {/* Contact & Social Links */}
-                <div data-aos="fade-up" data-aos-delay="400">
+                <div data-aos="fade-up" data-aos-delay="200">
                     <h3 className="text-white font-bold text-left text-xl mb-6">{footer.contacts}</h3>
                     <ul className="space-y-4 mb-8">
                         <li className="flex items-center">
@@ -118,7 +118,7 @@ function Footer() {
             </div>
 
             {/* Bottom Links & Copyright */}
-            <div data-aos="fade-right" data-aos-delay="400" className="container mx-auto px-6 mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <div data-aos="fade-right" data-aos-delay="200" className="container mx-auto px-6 mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                 <p>{footer.copyright}</p>
                 <div className="flex space-x-6 mt-4 md:mt-0">
                     {footer.bottomLinks.map((link, index) => (

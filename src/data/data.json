@@ -16,7 +16,7 @@
             },
             {
                 "name": "Project",
-                "path": "/me"
+                "path": "/project"
             },
             {
                 "name": "Contact",
@@ -336,6 +336,24 @@
             {
                 "title": "Motion Design",
                 "description": "In this portfolio, you’ll find a curated selection of projects that highlight my skills in Main Areas, e.g., responsive web design"
+            }
+        ]
+    },
+    "projects": {
+        "title": "My Projects",
+        "description": "Home > Project",
+        "myProjects": [
+            {
+                "title": "Dev Arena",
+                "image": "Dev-Arena.png"
+            },
+            {
+                "title": "Portfolio Website",
+                "image": "Portfolio.png"
+            },
+            {
+                "title": "Web Blockchain",
+                "image": "Blockchain.png"
             }
         ]
     },
