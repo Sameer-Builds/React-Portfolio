@@ -1,9 +1,10 @@
-import React ,{useEffect , useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ReactTyped } from 'react-typed';
-import {useSiteData} from "../context/SiteDataContext";
+import { useSiteData } from "../context/SiteDataContext";
+import Bar from "./Bar";
 
 function Hero() {
-            const {hero} = useSiteData();
+    const { hero } = useSiteData();
     return (
         <section
             className="relative  px-6 m-auto bg-black pt-20 md:pt-0 lg:pt-0  text-white bg-cover bg-center bg-no-repeat"
@@ -21,7 +22,7 @@ function Hero() {
                     </h1>
                     <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-red-500">
                         <ReactTyped
-                            strings={hero.roles ||[]}
+                            strings={hero.roles || []}
                             typeSpeed={90}
                             backSpeed={60}
                             backDelay={1500}
@@ -31,7 +32,7 @@ function Hero() {
 
 
                     <p className="text-gray-100 text-md md:text-lg max-w-xl leading-relaxed mt-4">
-                {hero.description}
+                        {hero.description}
                     </p>
 
                     <button className="mt-8 bg-red-500 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 flex items-center space-x-2">
@@ -43,6 +44,7 @@ function Hero() {
                     <img src={hero.image} alt="" className="pt-20 sm:pl-0 md:pl-20 lg:pl-20" />
                 </div>
             </div>
+            <Bar name= {hero.name} percentage={hero.percentage}/>
         </section>
     );
 }

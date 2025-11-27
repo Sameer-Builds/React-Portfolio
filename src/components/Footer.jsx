@@ -15,6 +15,7 @@ function Footer() {
     };
 
     return (
+        <>
         <footer className="bg-zinc-900 text-gray-400 py-16 md:py-20">
             <div className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
 
@@ -134,7 +135,9 @@ function Footer() {
                     ))}
                 </div>
             </div>
+
         </footer>
+        </>
     );
 }
 

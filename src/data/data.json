@@ -32,6 +32,8 @@
             "A Thinker",
             "A Coder"
         ],
+        "name": "PHOTOSHOP",
+        "percentage": "100%",
         "description": "A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities and professional growth.",
         "buttonText": "View Portfolio",
         "image": "/banner-user-image-one.png",
