@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSiteData } from "../context/SiteDataContext";
+import GenericCard from './GenericCard';
 
 function LatestService() {
     const { latestService } = useSiteData();
@@ -24,18 +25,7 @@ function LatestService() {
                 <div className="flex flex-col mt-5">
                     {latestService.services.map((service, index) => (
                         <div key={index} className={index !== 0 ? "mt-6" : ""}>
-                            <div
-                                data-aos="fade-right"
-                                data-aos-delay={400 + index * 100} 
-                                className="border border-red-500/20 rounded-3xl p-8 bg-zinc-900/70 
-                                group transition-all duration-500 hover:border-red-500/60">
-                                <p className="text-white text-2xl font-bold">
-                                    {`0${index + 1}.`} {service.title}
-                                </p>
-                                <p className="text-gray-400/70 mt-4">
-                                    {service.description}
-                                </p>
-                            </div>
+                            <GenericCard data={service} index={index} />
                         </div>
                     ))}
                 </div>

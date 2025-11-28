@@ -44,7 +44,7 @@ function Hero() {
                     <img src={hero.image} alt="" className="pt-20 sm:pl-0 md:pl-20 lg:pl-20" />
                 </div>
             </div>
-            <Bar name= {hero.name} percentage={hero.percentage}/>
+
         </section>
     );
 }

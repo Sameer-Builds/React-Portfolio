@@ -4,7 +4,7 @@ function ExpertiseCard({ title, project, icon: Icon, index }) {
     return (
         <div
             data-aos="fade-up"
-            data-aos-delay={200 * (index + 1)}
+            data-aos-delay={(index + 1) * 200}
             className="border border-red-500/20 rounded-3xl p-8 text-center 
                     group transition-all duration-500 hover:border-red-500/60"
         >

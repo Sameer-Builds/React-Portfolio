@@ -1,5 +1,6 @@
 import React from "react";
 import { useSiteData } from "../context/SiteDataContext";
+import GenericCard from "./GenericCard";
 
 function EduandExp() {
     const { eduAndExp } = useSiteData();
@@ -25,18 +26,9 @@ function EduandExp() {
                 </div>
                 <div className="mt-10 mx-6 grid grid-cols-1 md:grid-cols-2 gap-6">
                     {eduAndExp.education.map((edu, index) => (
-                        <div
-                            key={index}
-                            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-                            data-aos-delay="400"
-                            className="mt-6" >
-                            <div className="border border-red-500/20 rounded-3xl p-10 bg-zinc-900/70 group transition-all duration-500 hover:border-red-500/60 h-full">
-                                <p className="text-white font-semibold">{edu.title}</p>
-                                <p className="text-white font-bold mt-2">{edu.year}</p>
-                                <p className="text-gray-400/70 mt-4">{edu.description}</p>
-                            </div>
-                        </div>
+                        <GenericCard data={edu} index={index} key={index} />
                     ))}
+
                 </div>
             </div>
             <div className="px-4 mt-10 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 pb-5">
@@ -47,23 +39,9 @@ function EduandExp() {
                         <img className="h-2" src={eduAndExp.lineImage} alt="" />
                     </div>
                     {eduAndExp.experience.map((exp, index) => (
-                        <div
-                            key={index}
-                            data-aos="fade-right"
-                            data-aos-delay="400"
-                            className="mt-6"  >
-                            <div className="rounded-3xl p-8 bg-zinc-900/70">
-                                <p className="text-red-500 font-semibold">{exp.tag}</p>
-
-                                <p className="text-white text-2xl font-bold mt-2">
-                                    {exp.company} {exp.duration} </p>
-                                <p className="text-white font-semibold mt-2">
-                                    {exp.role} </p>
-                                <p className="text-gray-400/70 mt-4">
-                                    {exp.description} </p>
-                            </div>
-                        </div>
+                        <GenericCard data={exp} index={index} key={index} />
                     ))}
+
                 </div>
                 <div
                     data-aos="fade-left"

@@ -32,8 +32,7 @@
             "A Thinker",
             "A Coder"
         ],
-        "name": "PHOTOSHOP",
-        "percentage": "100%",
+        
         "description": "A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities and professional growth.",
         "buttonText": "View Portfolio",
         "image": "/banner-user-image-one.png",
@@ -170,22 +169,22 @@
         "lineImage": "custom-line.png",
         "education": [
             {
-                "title": "Trainer Marketing",
+                "subtitle": "Trainer Marketing",
                 "year": "2005-2009",
                 "description": "A personal portfolio is a curated collection of an individual's professional work, showcasing their skills, experience A personal portfolio"
             },
             {
-                "title": "Design Assistant",
+                "subtitle": "Design Assistant",
                 "year": "2008-2012",
                 "description": "Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs."
             },
             {
-                "title": "Design Assistant",
+                "subtitle": "Design Assistant",
                 "year": "2008-2012",
                 "description": "Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs."
             },
             {
-                "title": "Assistant Director",
+                "subtitle": "Assistant Director",
                 "year": "2010-2014",
                 "description": "In this portfolio, you’ll find a curated selection of projects that highlight my skills in Main Areas, e.g., responsive web design"
             }
@@ -193,15 +192,13 @@
         "experience": [
             {
                 "tag": "experience",
-                "company": "Soft Tech",
-                "duration": "(2 Years)",
-                "role": "UI/UX Designer",
+                "title": "Soft Tech (2 Years)",
+                "subtitle": "UI/UX Designer",
                 "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum desi dolore eu fugiat nulla pariatu Duis aute irure."
             },
             {
                 "tag": "experience",
-                "company": "Modern Tech",
-                "duration": "(3 Years)",
+                "title": "Modern Tech (3 Years)",
                 "role": "Web Developer",
                 "description": "In this portfolio, you’ll find a curated selection of projects that highlight my skills in Main Areas, e.g., responsive web design."
             }
@@ -364,6 +361,11 @@
         "description": "Home > Contact",
         "cards": [
             {
+                "icon":"FaLinkedinIn",
+                "caption":"Linked-In",
+                "address":"Sameer Akhtar"
+            },
+            {
                 "icon": "FaLocationArrow",
                 "caption": "Location",
                 "address": "Dhaka 1216, road 45 house of street"
@@ -371,12 +373,12 @@
             {
                 "icon": "FiMail",
                 "caption": "Email",
-                "email": "themespark11@gmail.com hasan@yourmail.com"
+                "address": "themespark11@gmail.com hasan@yourmail.com"
             },
             {
                 "icon": "FiPhone",
                 "caption": "Call Me",
-                "number": "0000 - 000 - 000 00 +1234 - 000"
+                "address": "0000 - 000 - 000 00 +1234 - 000"
             }
         ]
     }
