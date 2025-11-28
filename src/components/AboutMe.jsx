@@ -6,6 +6,8 @@ import {
     FaVoicemail,
     FaSquarespace,
 } from "react-icons/fa";
+import ExpertiseCard from './ExpertiseCard';
+import ProjectCard from './ProjectCard';
 function AboutMe() {
     const { aboutme } = useSiteData();
     const icons = [FaPen, FaDelicious, FaVoicemail, FaSquarespace]
@@ -15,20 +17,12 @@ function AboutMe() {
                 {aboutme.skillCards.map((card, index) => {
                     const Icon = icons[index % icons.length];
                     return (
-                        <div
-                            key={index}
-                            data-aos="fade-up"
-                            data-aos-delay={200 * (index + 1)}
-                            className="border border-red-500/20 rounded-3xl p-8 text-center group transition-all duration-500 hover:border-red-500/60">
-                            <Icon className="text-white/70 text-5xl m-auto mb-5 group-hover:text-red-500 transition-colors duration-300" />
-                            <p className='relative inline-block text-white text-xl font-bold mb-3 
-                    before:content-[""] before:absolute before:left-0 before:bottom-0 
-                    before:h-0.5 before:w-0 before:bg-red-500 before:transition-all before:duration-500 
-                    group-hover:before:w-full hover:before:w-full hover:text-red-500 group-hover:text-red-500'>
-                                {card.title}
-                            </p>
-                            <p className="text-white">{card.project}</p>
-                        </div>
+                        <ExpertiseCard 
+                        key={index}
+                        icon={Icon}
+                        title={card.title}
+                        project={card.project}
+                        />
                     );
                 })}
             </div>
@@ -57,19 +51,11 @@ function AboutMe() {
                 <div data-aos="fade-up" data-aos-delay="800" className=' lg:container md:container md:px-6 lg:px-6 mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10'>
                     {aboutme.stats.map((stat, index) => {
                         return (
-                        <div key={index}>
-                            <div className='border border-red-500/20 rounded-3xl p-15 text-center  group transition-all duration-500 hover:border-red-500/60'>
-                                <p className=' text-white text-5xl text-center whitespace-nowrap font-bold mb-3  group-hover:text-red-500'>
-                                    {stat.value}
-                                </p>
-
-                                <p className='text-white text-2xl relative inline-block before:content-[""] before:absolute before:left-0 before:bottom-0 
-                before:h-0.5 before:w-0 before:bg-red-500 
-                before:transition-all before:duration-500 
-                group-hover:before:w-full hover:before:w-full 
-                hover:text-red-500 group-hover:text-red-500'>{stat.label}</p>
-                            </div>
-                        </div>
+                    <ProjectCard 
+                    key={index}
+                    value={stat.value}
+                    label={stat.label}
+                    />
                         );
                     })}
                 </div>
